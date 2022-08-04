@@ -1,7 +1,12 @@
+
+.app {
+    overflow: hidden;
+}
+
 .header {
     height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
-
+    padding: 0 20px;
 }
 
 .header__navbar {
@@ -453,7 +458,7 @@
 }
 
 .header__mobile-search {
-    
+    display: none;
 }
 
 .header__mobile-search-icon {
@@ -574,6 +579,90 @@
     margin-right: auto;
 }
 
+
+/* Header navbar */
+.nav_bars-btn {
+    height: 28px;
+    display: none;
+    font-size: 25px;
+}
+
+.nav_bars-btn i {
+    color: #fff;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.nav__mobile {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    max-width: 100%;
+    z-index: 4;
+    background-color: #fff;
+
+    /* Trượt vào */
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+
+.nav__mobile-list {
+    display: block;
+    font-size: 1.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__mobile-list li {
+    height: var(--header-sort-bar-height);
+    border-bottom: 1px solid #b2b2b2;
+    line-height: var(--header-sort-bar-height);
+}
+
+.nav__mobile-link {
+    height: 24px;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 24px;
+}
+
+.nav__mobile-link.nav__mobile-link-checked {
+    color: var(--primary-color);
+}
+
+.nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+
+.nav__input:checked ~ .nav__mobile{
+    /* Trượt ra */
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* Header search */
 .header__search-input-wrap {
     flex: 1;
     height: 100%;
@@ -904,13 +993,15 @@
 }
 
 /* App container */
+
 .app__container {
     background-color: #f5f5f5;
 }
 
 .app__content {
     padding-top: 36px;
-
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .category {

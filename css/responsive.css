@@ -58,6 +58,7 @@
 
     .header-with-search {
         justify-content: space-between;
+        padding: 0 16px;
     }
 
     .header__logo,
@@ -77,6 +78,11 @@
         animation: mobileSearchSideIn linear 0.3s;
         display: none;
         
+    
+    }
+
+    .header__mobile-search {
+        display: block;
     }
 
     .header__search-history {
@@ -85,6 +91,20 @@
         width: 100%;
         left: 0;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .pagination {
+        padding-left: 0;
+    }
+
+    .pagination-item {
+        margin: 0;
+    }
+
+    .pagination-item__link {
+        --height: 28px;
+        font-size: 1.6rem;
+        min-width: 36px;
     }
 
     /* Hiệu ứng thanh tìm kiếm trượt vào  */
@@ -97,5 +117,9 @@
             opacity: 1;
             top: var(--header-height);
         }
+    }
+
+    .nav_bars-btn {
+        display: block;
     }
 }

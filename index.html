@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./fonts/fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -127,6 +128,49 @@
 
                 <!-- Header with search -->
                 <div class="header-with-search">
+
+                    <!-- Menu -->
+                    <label for="nav__mobile-input" class="nav_bars-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+    
+    
+                    <input type="checkbox" hidden class="nav__input" id="nav__mobile-input">
+    
+                    <label for="nav__mobile-input" class="nav__overlay">
+    
+                    </label>
+    
+                    <nav class="nav__mobile">
+                        <ul class="nav__mobile-list">
+                            <li>
+                                <a href="" class="nav__mobile-link nav__mobile-link-checked">Tất cả sản phẩm</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav__mobile-link">DỊCH VỤ</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav__mobile-link">THỰC PHẨM CHỨC NĂNG</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav__mobile-link">LÀM SẠCH</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav__mobile-link">MAKE UP</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav__mobile-link">CHỐNG NẮNG</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav__mobile-link">DƯỠNG ẨM</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav__mobile-link">DƯỠNG TRẮNG</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Kính lúp -->
                     <label for="mobile-search-checkbox" class="header__mobile-search">
                         <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
                     </label>
@@ -291,7 +335,7 @@
         <div class="app__container">
             <div class="grid">
                 <div class="grid__row app__content">
-                    <div class="grid__column-2">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 Danh mục
@@ -311,7 +355,7 @@
                         </nav>
                     </div>
     
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="btn home-filter__btn">Phổ biến</button>
@@ -352,7 +396,7 @@
                         <div class="home-product">
                             <div class="grid__row">
                                 <!-- Product item -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cocoshop.vn/uploads/shops/2019_10/kem-duong-da-simple-light-lo.jpg);"></div>
                                         <h4 class="home-product-item__name">Sữa Dưỡng Da Simple Kind To Skin Hydrating Light Moisturiser 125ml</h4>
@@ -392,7 +436,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://www.simpleskincare.com/sk-eu/content/dam/brands/simple/global_use/1880156-simple-kts-refreshing-facial-wash-150ml.jpg.rendition.380.380.jpg);"></div>
                                         <h4 class="home-product-item__name">Sữa Rửa Mặt Simple Gel Kind To Skin Refreshing Facial Wash Gel 150Ml</h4>
@@ -432,7 +476,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://www.simpleskincare.com/sk-eu/content/dam/brands/simple/global_use/1880162-simple-kts-soothing-facial-toner-200ml.jpg);"></div>
                                         <h4 class="home-product-item__name">Nước Hoa Hồng Soothing Facial Toner Simple cân bằng ẩm cho da 200ml</h4>
@@ -472,7 +516,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://mint07.com/wp-content/uploads/2020/08/kem-chong-nang-senka-perfect-uv-essence-spf50.jpeg);"></div>
                                         <h4 class="home-product-item__name">Tinh Chất Chống Nắng SENKA Perfect UV Essence SPF50+ PA++++ 40ml</h4>
@@ -512,7 +556,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://adminbeauty.hvnet.vn/Upload/Files/a1-11032019113042.jpg);"></div>
                                         <h4 class="home-product-item__name">Son Dưỡng Môi Dạng Thỏi Vaseline Lip Therapy 4.8g</h4>
@@ -552,7 +596,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://www.watsons.vn/medias/zoom-side-200113.jpg?context=bWFzdGVyfHNpZGUvem9vbXwzODQxMHxpbWFnZS9qcGVnfHNpZGUvem9vbS9oOTIvaDc4LzkyOTE5NjM5NTcyNzguanBnfDhkZmJiZGM2NjU1ZDlhNDE2MWQ1ZTIzMDM0YjM5MzliODNmZDkwYWU2MzFmYzM3ZTY5NjhiMTBiMmQ5OTc4YjQ);"></div>
                                         <h4 class="home-product-item__name">Chì Kẻ Viền Mắt Silky Girl Perfect Stay 20HR Eyeliner 0.28g</h4>
@@ -592,7 +636,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://img.websosanh.vn/v10/users/review/images/753ity9lgou0b/hada-labo-advanced-nourish-hyaluron-cleanser.jpg?compress=85);"></div>
                                         <h4 class="home-product-item__name">Kem Rửa Mặt Dưỡng Ẩm Cho Mọi Loại Da Hada Labo Advanced Nourish Cream Cleanser 80g dưỡng ẩm tối ưu</h4>
@@ -632,7 +676,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://adminbeauty.hvnet.vn/Upload/Files/a3-03112018023519.jpg);"></div>
                                         <h4 class="home-product-item__name">Phấn nước Missha Magic Cushion Cover Lasting SPF50+ PA+++</h4>
@@ -672,7 +716,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://adminbeauty.hvnet.vn/Upload/Files/01-11082018105320.jpg);"></div>
                                         <h4 class="home-product-item__name">Tinh chất hỗ trợ giảm mụn Some By Mi AHA BHA PHA 30 Days Miracle Serum</h4>
@@ -712,7 +756,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://mint07.com/wp-content/uploads/2018/01/nuoc-tay-trang-loreal-tuoi-mat-400ml.jpg);"></div>
                                         <h4 class="home-product-item__name">Nước Tẩy Trang L'oreal Refreshing làm sạch, dưỡng ẩm cho mọi loại da 400ml</h4>
@@ -807,7 +851,7 @@
         <footer class="footer">
             <div class="grid">
                 <div class="grid__row">
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer__list">
                             <li class="footer__list-item">
@@ -821,7 +865,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer__list">
                             <li class="footer__list-item">
@@ -835,11 +879,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Danh mục</h3>
                         
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer__list">
                             <li class="footer__list-item">
@@ -862,7 +906,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
                             <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg//assets/d91264e165ed6facc6178994d5afae79.png" alt="" class="footer__download-qr">
