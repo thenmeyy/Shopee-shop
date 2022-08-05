@@ -1064,7 +1064,7 @@
 
 /* Mobile category */
 .mobile-category {
-
+    display: none;
 }
 
 .mobile-category__list {
@@ -1120,6 +1120,7 @@
     -webkit-user-select: none;
     /* Khi bấm vào thì không bị đổi màu */
     -webkit-tap-highlight-color: transparent;
+    padding: 0 6px;
 }
 
 /* Home sort + filter */

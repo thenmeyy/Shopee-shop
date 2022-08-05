@@ -1,9 +1,5 @@
 /* Mobile & tablet */
 @media (max-width: 1023px) {
-    :root {
-        --navbar-height: 0px;
-        --header-height: 68px;
-    }
 
     .hide-on-mobile-tablet {
         display: none;
@@ -40,10 +36,20 @@
     .app__content {
         padding-top: 8px;
     }
+
+    .mobile-category {
+        display: block;
+    }
+
 }
 
 /* Tablet */
 @media (max-width: 1023px) and (min-width: 740px) {
+    :root {
+        --navbar-height: 0px;
+        --header-height: 68px;
+    }
+
     .hide-on-tablet {
         display: none;
     }
@@ -52,10 +58,20 @@
         text-align: right;
         width: 80px;
     }
+    
+    .footer__content {
+        padding: 0 50px;
+    }
+
 }
 
 /* Mobile */ 
 @media (max-width: 739px) {
+    :root {
+        --navbar-height: 0px;
+        --header-height: 54px;
+    }
+
     .hide-on-mobile {
         display: none;
     }
@@ -116,19 +132,31 @@
         min-width: 36px;
     }
 
-    /* Hiệu ứng thanh tìm kiếm trượt vào  */
-    @keyframes mobileSearchSideIn {
-        from {
-            opacity: 0;
-            top: calc(var(--header-height) / 2);
-        }
-        to {
-            opacity: 1;
-            top: var(--header-height);
-        }
-    }
-
     .nav_bars-btn {
         display: block;
+    }
+
+    .header__logo-img {
+        width: 110px;
+    }
+
+    .footer__content {
+        padding: 0 8px;
+    }
+
+    .footer__download-apps {
+        flex: unset;
+    }
+}
+
+/* Hiệu ứng thanh tìm kiếm trượt vào  */
+@keyframes mobileSearchSideIn {
+    from {
+        opacity: 0;
+        top: calc(var(--header-height) / 2);
+    }
+    to {
+        opacity: 1;
+        top: var(--header-height);
     }
 }
